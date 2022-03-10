@@ -6,3 +6,4 @@
 
 #include "quick_sort.cpp"
 #include "Tasks/Task1.cpp"
+#include "Tasks/Task2.cpp"

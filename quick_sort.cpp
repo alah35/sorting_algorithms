@@ -5,12 +5,12 @@ int getPivotIndex(T *arr, int left, int right) {
     for (int i = left; i < right; i++) {
         if (arr[i] < arr[right]) {
             pivot++;
-            swap(arr[pivot], arr[i]);
+            std::swap(arr[pivot], arr[i]);
         }
     }
 
     pivot++;
-    swap(arr[pivot], arr[right]);
+    std::swap(arr[pivot], arr[right]);
 
     return pivot;
 }
