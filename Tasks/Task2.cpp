@@ -26,7 +26,7 @@ int* get_two_numbers2(int *a, size_t len, int *b, int res) { // function only fo
         if (sum < res)
             l++;
         else
-            r++;
+            r--;
     }
     b[0] = 0; b[1] = 0;
     return b;
@@ -42,7 +42,7 @@ int* get_two_numbers2(int *a, size_t len, int *b, int res) { // function only fo
 void task2() {
     int answer[2], a[4] = {2, 7, 11, 15};
     int res = 9;
-    quickSort(a, 0, sizeof(a) / sizeof(int));
+//    quickSort(a, 0, sizeof(a) / sizeof(int) - 1);
     get_two_numbers2(a, sizeof(a) / sizeof(int), answer, res);
-    outputArray(answer, sizeof(a));
+    outputArray(answer, sizeof(answer));
 }

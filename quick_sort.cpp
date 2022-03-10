@@ -2,7 +2,7 @@
 template<typename T>
 int getPivotIndex(T *arr, int left, int right) {
     int pivot = left - 1;
-    for (int i = left; i < right; i++) {
+    for (int i = left; i <= right; i++) {
         if (arr[i] < arr[right]) {
             pivot++;
             std::swap(arr[pivot], arr[i]);
@@ -21,7 +21,7 @@ void quickSort(T *arr, int left, int right) {
         int pivotIndex = getPivotIndex(arr, left, right);
 
         quickSort(arr, left, pivotIndex - 1);
-        quickSort(arr, pivotIndex + 1, 14);
+        quickSort(arr, pivotIndex + 1, right);
     }
 }
 
