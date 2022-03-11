@@ -2,6 +2,6 @@
 #include "Tasks.h"
 
 int main() {
-    task3();
+    task4();
     return 0;
 }
