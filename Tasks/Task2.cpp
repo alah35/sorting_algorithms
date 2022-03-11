@@ -39,10 +39,10 @@ int* get_two_numbers2(int *a, size_t len, int *b, int res) { // function only fo
 //    outputArray(answer, sizeof(answer));
 //}
 
-void task2() {
+void task2() { // second way we can to sort array and get two numbers
     int answer[2], a[4] = {2, 7, 11, 15};
     int res = 9;
-//    quickSort(a, 0, sizeof(a) / sizeof(int) - 1);
+   quickSort(a, 0, sizeof(a) / sizeof(int) - 1);
     get_two_numbers2(a, sizeof(a) / sizeof(int), answer, res);
     outputArray(answer, sizeof(answer));
 }

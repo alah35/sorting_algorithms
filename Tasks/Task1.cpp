@@ -16,8 +16,8 @@ void push_borders (int *arr, int &l, int &r) {
 }
 
 void task1() {
-    int arr[8] ;//= {-2,1,-3,4,-1,2,1,-5,4};
-    inputArray(arr, sizeof(arr));
+    int arr[9] = {-2,1,-3,4,-1,2,1,-5,4};
+//    inputArray(arr, sizeof(arr));
     outputArray(arr, sizeof(arr));
 
     int l = 0, r = sizeof(arr) / sizeof(int) - 1;
@@ -30,5 +30,5 @@ void task1() {
         }
         push_borders(arr, l, r);
     }
-    std::cout << maxSum << " i = " << i << " j = " << j << std::endl;
+    std::cout << " i = " << i << " j = " << j << std::endl;
 }

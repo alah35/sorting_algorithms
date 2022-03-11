@@ -15,6 +15,7 @@ void show_by_models(T *arr, int len) {
     for (int i = 0; i < len / sizeof(T); i++) {
         std::cout << res[i] << ", ";
     }
+    std::cout << std::endl;
 }
 
 void task4() {
