@@ -1,6 +1,6 @@
 
 template <typename T>
-void show_by_models(T *arr, int len) {
+void show_by_abs(T *arr, int len) {
     int l = 0, r = len / sizeof(T) - 1, i = r;
     int res[len / sizeof(T)];
     while (l <= r) {
@@ -21,5 +21,5 @@ void show_by_models(T *arr, int len) {
 void task4() {
     int arr[6] = {-100,-50, -5, 1, 10, 15};
     outputArray(arr,sizeof(arr));
-    show_by_models(arr, sizeof(arr));
+    show_by_abs(arr, sizeof(arr));
 }
